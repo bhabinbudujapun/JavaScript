@@ -6,11 +6,11 @@
 // full_Name [Snakecase]
 // FullName [Not Recommended]
 
-//String
+//STRING
 var courseName = "Javascript";
-//Boolean
+//BOOLEAN
 var isLoggedIn = false;
-//Number
+//NUMBER
 var loggedCount = 32;
 
 // console.log(courseName);
@@ -23,7 +23,7 @@ let email = "bhabinpun@dev.io";
 let isLoggedInFromFacebook = false;
 let isLoggedInFromGoogle = false;
 
-// backtick
+// BACKTICK
 console.log(`
 With the uid: ${uid}
 Email: ${email}
@@ -44,20 +44,43 @@ console.log("Discount Percentage: " + displayDiscountPrice + "%");
 // typeof function used to print the which type of value
 console.log("Type of value: " + typeof displayDiscountPrice);
 
-
+// SWITCH CASE
 function getUserRole(name, role) {
-    switch(role){
-        case 'admin':
-            console.log(`Hello, ${name} Welcome to admin dashboard`);
-            break;
-        case 'user':
-            console.log(`Welcome to ${name}, landing page`);
-            break;
-        default:
-            console.log(`Welcome, ${name}`);
-            break;
-    }
-
+  switch (role) {
+    case "admin":
+      console.log(`Hello, ${name} Welcome to admin dashboard`);
+      break;
+    case "user":
+      console.log(`Welcome to ${name}, landing page`);
+      break;
+    default:
+      console.log(`Welcome, ${name}`);
+      break;
+  }
 }
 
-getUserRole('Bhabin');
+getUserRole("Bhabin", "admin");
+
+// TERNARY OPERATOR
+let authenticated = true;
+
+// if (authenticated) {
+//   console.log("Show signout button");
+// } else {
+//   console.log("Show signin button");
+// }
+
+authenticated
+  ? console.log("Show signout button")
+  : console.log("Show signin button");
+
+// COMPARISION OPERATOR equality(==) and strict equality(===)
+//equality(==): check operands/data value only, like:
+if (1 == "1") {
+  console.log("True for equality operator");
+}
+
+//strict equality(===) operator: check operands/data value and type also: like
+if (1 == "1") {
+  console.log("False for strick equality operator");
+}
