@@ -11,6 +11,16 @@ var user = {
   getCourseCount: function () {
     return `${this.firstName} is enrolled total ${this.courseList.length} course`;
   },
+  getUserInfo: function () {
+    console.log(
+      `
+User Details:
+username: ${this.firstName} ${this.lastName}
+role: ${this.role}
+course-count: ${this.courseList.length}
+`
+    );
+  },
 };
 
 // Accessing value
@@ -23,3 +33,5 @@ console.log(user.role);
 
 user.buyCourse("Javascript");
 console.log(user.getCourseCount());
+
+user.getUserInfo();
