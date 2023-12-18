@@ -1,20 +1,30 @@
 // LOOPS
 // FOR LOOP
-const contries = ["Nepal", "India", "Indonesia", "United states"];
-for (let i = 0; i < contries.length; i++) {
+const countries = ["Nepal", "India", "Indonesia", "United states"];
+for (let i = 0; i < countries.length; i++) {
   //   console.log(contries[i]);
 }
 
-// WHILE
+// WHILE LOOP
 var i = 0;
-while (i < contries.length) {
+while (i < countries.length) {
   //   console.log(contries[i]);
   i++;
 }
 
-// DO-WHILE
+// DO-WHILE LOOP
 i = 0;
 do {
-  console.log(contries[i]);
+  // console.log(contries[i]);
   i++;
-} while (i < contries.length);
+} while (i < countries.length);
+
+// FOR IN LOOP
+for (const contry of countries) {
+  // console.log(contry);
+}
+
+// FOR OF LOOP
+for (const country in countries) {
+  console.log(countries[country]);
+}
