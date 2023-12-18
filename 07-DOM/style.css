@@ -1,0 +1,43 @@
+body {
+  background-color: #626161;
+}
+
+div {
+  display: flex;
+  /* flex-wrap: wrap;
+  flex-direction: row; */
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.color-hover {
+    margin-top: 100px;
+}
+
+.color {
+  padding: 15px 65px;
+  margin-right: 5px;
+  align-items: center;
+  margin-top: 5px;
+  border-radius: 2px;
+}
+
+.red {
+  background-color: red;
+}
+
+.cyan {
+  background-color: cyan;
+}
+
+.violet {
+  background-color: violet;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.pink {
+  background-color: pink;
+}
