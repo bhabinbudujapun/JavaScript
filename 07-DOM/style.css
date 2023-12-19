@@ -2,24 +2,20 @@ body {
   background-color: #626161;
 }
 
-div {
+.color-hover {
   display: flex;
   /* flex-wrap: wrap;
   flex-direction: row; */
   flex-flow: row wrap;
   justify-content: center;
-}
-
-.color-hover {
-    margin-top: 100px;
+  margin-top: 80px;
 }
 
 .color {
   padding: 15px 65px;
-  margin-right: 5px;
-  align-items: center;
-  margin-top: 5px;
+  margin: 5px;
   border-radius: 2px;
+  cursor: pointer;
 }
 
 .red {
@@ -35,9 +31,22 @@ div {
 }
 
 .orange {
-    background-color: orange;
+  background-color: orange;
 }
 
 .pink {
   background-color: pink;
+}
+
+
+.center {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.circle {
+  width:250px;
+  height:250px;
+  border-radius: 50%;
 }
