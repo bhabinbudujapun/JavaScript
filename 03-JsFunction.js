@@ -56,18 +56,3 @@ const numList = [2, 4, 6];
 
 console.log(numList.every(isEvenfun));
 
-// Functional Way to create Object OR Constructor Functions
-var User = function (firstName, lastName, email, courseCount) {
-  this.firstName = firstName;
-  this.lastName = lastName;
-  this.email = email;
-  this.courseCount = courseCount;
-
-  this.getCourseCount = function() { 
-    console.log("Total number of courses: " + this.courseCount);
-  };
-}
-
-var user1 = new User('bhabin', 'pun', 'poon.bhabin6332@gmail.com', 1);
-
-user1.getCourseCount();
