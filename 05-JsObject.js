@@ -48,6 +48,11 @@ var User = function (firstName, lastName, email, courseCount) {
   };
 };
 
+User.prototype.getUserName = function () {
+  console.log(`User name: ${this.firstName} ${this.lastName}`);
+};
+
 var user1 = new User("bhabin", "pun", "poon.bhabin6332@gmail.com", 1);
 
 user1.getCourseCount();
+user1.getUserName();
