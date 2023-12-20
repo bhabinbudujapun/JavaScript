@@ -56,3 +56,10 @@ var user1 = new User("bhabin", "pun", "poon.bhabin6332@gmail.com", 1);
 
 user1.getCourseCount();
 user1.getUserName();
+
+// .hasOwnProperty('yourPropertyName') --> returns true if property has been defined otherwise false
+if (user1.hasOwnProperty("firstName")) {
+  console.log("Yes, It exists");
+} else {
+  console.log("No, It does not exist");
+}
