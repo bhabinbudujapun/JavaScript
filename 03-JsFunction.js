@@ -48,11 +48,51 @@ const loginUserName = () => {
 // loginUserName();
 
 var isEvenfun = (number) => {
-  console.log(number);
   return number % 2 === 0;
 };
 
 const numList = [2, 4, 6];
+// console.log(numList.every(isEvenfun));
 
-console.log(numList.every(isEvenfun));
+// Self-Executing Anonymous Function OR,
+// Immediate Invoked Function
+
+(function () {
+  console.log("IIFE Function - Immediate Invoked Function");
+})();
+
+// Passing arguments
+(function () {
+  console.log(arguments[0]);
+})("IIFE Function with arguments");
+
+// Or,
+(function (arg) {
+  console.log(arg);
+})("IIFE Function with arguments");
+
+// Arrow functions
+let arrowFunction = () => {
+  console.log("Arrow functions");
+};
+
+arrowFunction();
+
+// Another example of arrow function
+let sumValue = (a, b) => a + b;
+
+console.log("Sum: " + sumValue(1, 2));
+
+// In JavaScript, a closure is a feature that allows inner functions to access the outer scope of a function.
+function outerFunction() {
+  let outerVariable = "I am outside!";
+
+  function innerFunction() { 
+    console.log(outerVariable);
+  }
+  return innerFunction;
+}
+
+let innerFunc = outerFunction();
+innerFunc();
 
