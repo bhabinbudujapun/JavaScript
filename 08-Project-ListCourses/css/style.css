@@ -1,8 +1,14 @@
 body {
-    background-color: darkgray;
+  background-color: #424242;
+  font-family: monospace;
 }
 
-.courseContainer { 
-    background-color: white;
-    padding: 10px 10px;
+.container-course {
+  width: 100%;
+  background-color: #fda90f;
+  color: #434343;
+}
+
+.btn-center {
+    text-align: center;
 }
