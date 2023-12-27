@@ -13,7 +13,7 @@ var courses = [
   },
   {
     name: "React",
-    price: "9.99",
+    price: "10.99",
   },
   {
     name: "Angular",
@@ -61,8 +61,6 @@ button.addEventListener("click", () => {
 
 const dbutton = document.querySelector(".btn-dsort");
 dbutton.addEventListener("click", () => {
-  courses = courses
-    .map((course) => ({ ...course, price: parseFloat(course.price) }))
-    .reverse();
+  courses.sort((a, b) => a.price - b.price).reverse();
   generateCourseList();
 });
