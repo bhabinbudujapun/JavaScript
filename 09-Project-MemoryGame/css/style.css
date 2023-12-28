@@ -1,0 +1,22 @@
+body {
+  background-color: #424242;
+  font-family: monospace;
+  height: 100vh;
+}
+
+.game-container {
+  width: 600px;
+  height: 600px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 10%;
+  height: 10%;
+}
+
+.front {
+  display: hidden;
+}
