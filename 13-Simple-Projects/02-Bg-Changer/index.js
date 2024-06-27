@@ -16,4 +16,11 @@ document.addEventListener("DOMContentLoaded", () => {
     tvScreenClass.push(styleName);
     tvScreen.className = tvScreenClass.join(" ");
   }
+
+  const textElement = document.getElementById("textInput");
+  textElement.addEventListener("input", (event) => {
+    let displayParagraph = document.getElementById("displayParagraph");
+    // displayParagraph.style.fontWeight = "bold";
+    displayParagraph.textContent = event.target.value;
+  });
 });
