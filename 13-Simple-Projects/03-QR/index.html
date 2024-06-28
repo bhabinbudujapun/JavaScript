@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>QR</title>
+</head>
+
+<body>
+    <!-- component -->
+    <section class="body-font h-screen bg-gray-100 pt-10 text-gray-600">
+        <div class="container mx-auto mt-10 flex max-w-3xl flex-wrap justify-center rounded-lg bg-white px-5 py-5">
+            <h2 class="my-4">
+                <span
+                    class="flex-none block mx-4 px-4 py-2.5 text-xs leading-none font-medium uppercase bg-gray-700 text-white">
+                    QR-GENERATOR
+                </span>
+            </h2>
+            <!-- QR Code-->
+            <div class="flex-wrap md:flex">
+                <div class="mx-auto">
+                    <img class="mx-auto mt-12 mb-4 h-52 w-52 rounded-lg border p-2 md:mt-0" />
+                    <button
+                        class="mx-auto block rounded-md border bg-blue-500 px-6 py-2 text-white outline-none">Generate</button>
+                </div>
+                <!-- Step Checkout -->
+                <div class="mt-8 max-w-sm md:mt-0 md:ml-10 md:w-2/3">
+                    <div class="relative flex pb-12">
+                        <div class="absolute inset-0 flex h-full w-10 items-center justify-center">
+                            <div class="pointer-events-none h-full w-1 bg-gray-200"></div>
+                        </div>
+                        <div
+                            class="relative z-10 inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-blue-500 text-white">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="h-5 w-5" viewBox="0 0 24 24">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <div class="flex-grow pl-4">
+                            <h2 class="title-font mb-1 text-sm font-medium tracking-wider text-gray-900">STEP 1</h2>
+                            <p class="font-laonoto leading-relaxed">
+                                Type your
+                                <b>Data,</b><br />
+                            </p>
+                        </div>
+                    </div>
+                    <div class="relative flex pb-12">
+                        <div class="absolute inset-0 flex h-full w-10 items-center justify-center">
+                            <div class="pointer-events-none h-full w-1 bg-gray-200"></div>
+                        </div>
+                        <div
+                            class="relative z-10 inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-blue-500 text-white">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="h-5 w-5" viewBox="0 0 24 24">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                            </svg>
+                        </div>
+                        <div class="flex-grow pl-4">
+                            <h2 class="title-font mb-1 text-sm font-medium tracking-wider text-gray-900">STEP 2</h2>
+                            <p class="font-laonoto leading-relaxed">Click On <b>Generate,</b> </p>
+                        </div>
+                    </div>
+                    <div class="relative flex pb-12">
+                        <div
+                            class="relative z-10 inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-blue-500 text-white">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="h-5 w-5" viewBox="0 0 24 24">
+                                <circle cx="12" cy="5" r="3"></circle>
+                                <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
+                            </svg>
+                        </div>
+                        <div class="flex-grow pl-4">
+                            <h2 class="title-font mb-1 text-sm font-medium tracking-wider text-gray-900">STEP 3</h2>
+                            <p class="font-laonoto leading-relaxed">Now you may print your <b>free QR code</b> or embed
+                                it on
+                                your website to make it available to others.</p>
+                            <p>* Around <b>35 words</b> only *</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <input type="text" id="textInput"
+                class="block p-4 pl-10 text-sm rounded-lg border border-gray-300 text-gray-900 font-medium bg-white outline-none"
+                maxlength="25" />
+        </div>
+    </section>
+</body>
+
+</html>
