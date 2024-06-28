@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const qrImg = document.getElementById("qrImg");
       const URL = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${inputData.value}`;
       qrImg.src = URL;
-      qrImg.style.display = "block";
     }
   });
 });
