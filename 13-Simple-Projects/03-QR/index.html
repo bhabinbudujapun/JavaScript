@@ -22,9 +22,7 @@
             <!-- QR Code-->
             <div class="flex-wrap md:flex">
                 <div class="mx-auto">
-                    <img class="mx-auto mt-12 mb-4 h-52 w-52 rounded-lg border p-2 md:mt-0" />
-                    <button
-                        class="mx-auto block rounded-md border bg-blue-500 px-6 py-2 text-white outline-none">Generate</button>
+                    <img id="qrImg" class="mx-auto mt-12 mb-4 h-52 w-52 rounded-lg p-2 md:mt-0" />
                 </div>
                 <!-- Step Checkout -->
                 <div class="mt-8 max-w-sm md:mt-0 md:ml-10 md:w-2/3">
@@ -82,11 +80,16 @@
                     </div>
                 </div>
             </div>
-            <input type="text" id="textInput"
-                class="block p-4 pl-10 text-sm rounded-lg border border-gray-300 text-gray-900 font-medium bg-white outline-none"
-                maxlength="25" />
+            <form action="" id="formData" class="flex gap-5">
+                <input type="text" id="textInput"
+                    class="block p-4 pl-10 text-sm rounded-lg border border-gray-300 text-gray-900 font-medium bg-white outline-none"
+                    maxlength="25" />
+                <button id="submitData"
+                    class="mx-auto block rounded-md border bg-blue-500 px-6 py-2 text-white outline-none">Generate</button>
+            </form>
         </div>
     </section>
+    <script src="./index.js"></script>
 </body>
 
 </html>
