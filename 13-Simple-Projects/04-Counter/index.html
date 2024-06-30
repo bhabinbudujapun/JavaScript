@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./counter.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Counter</title>
+</head>
+
+<body class="bg-gray-700">
+    <div class="flex flex-col gap-4 justify-center items-center h-screen">
+        <div class='max-w-md mx-auto space-y-6'>
+            <h2 class="flex flex-row items-center">
+                <span class="mx-4 px-4 py-2.5 text-xs leading-none font-medium uppercase bg-black text-white">
+                    Number Counter
+                </span>
+            </h2>
+        </div>
+        <div class="flex border h-20 w-30 rounded-lg border-gray-400">
+            <div
+                class="font-semibold border-r bg-red-700 hover:bg-red-600 text-white border-gray-400 h-full w-20 flex rounded-l focus:outline-none">
+                <span id="numberDec" class="m-auto cursor-pointer">-</span>
+            </div>
+            <div class="bg-white w-20 text-xs md:text-base flex items-center justify-center">
+                <span id="numberDisplay">0</span>
+            </div>
+            <div
+                class="font-semibold border-l  bg-blue-700 hover:bg-blue-600 text-white border-gray-400 h-full w-20 flex rounded-r focus:outline-none">
+                <span id="numberInc" class="m-auto cursor-pointer">+</span>
+            </div>
+        </div>
+        <div
+            class="py-3 w-2/12 font-medium text-white bg-indigo-600 hover:bg-indigo-500 rounded-lg border-indigo-500 hover:shadow inline-flex space-x-2 items-center justify-center">
+            <span id="numberReset" class="cursor-pointer">Reset</span>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
