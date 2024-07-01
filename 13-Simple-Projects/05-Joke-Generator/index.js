@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const paragraphJoke = document.getElementById("paragraphJoke");
       generateJoke.innerText = "Get Another Joke";
-      paragraphJoke.innerHTML = `<span> ${jokeData.setup} <br> ${jokeData.punchline}`;
+      paragraphJoke.innerHTML = `<span> ${jokeData.setup} <br> ${jokeData.punchline}</span>`;
     } catch (error) {
       console.error("Something Went Wrong:", error);
     }
