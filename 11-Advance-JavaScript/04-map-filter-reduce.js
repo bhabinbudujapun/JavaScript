@@ -1,3 +1,4 @@
+// MAP
 // It takes a callback function as an argument and returns a new array with the results of calling the function on every element of the original array.
 
 //  The callback function can take up to three parameters: the current element, the index of the current element, and the original array.
@@ -11,3 +12,15 @@ const arrTwo = arrOne.map((element) => {
 });
 
 arrTwo.forEach((element) => console.log(element));
+
+// FILTER
+// The filter() method in JavaScript allows you to create a new array by selecting elements that meet specific criteria from an existing array.
+
+// The filter() method doesn’t modify the original array; it creates a new one with the filtered elements.
+
+let arrNum = [15, 39, 20, 32, 30, 45, 22];
+function divByFive(num) {
+  return num % 3 == 0;
+}
+let arrNewNum = arrNum.filter(divByFive);
+console.log(arrNewNum);
