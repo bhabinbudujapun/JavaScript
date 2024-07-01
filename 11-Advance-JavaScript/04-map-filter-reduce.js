@@ -24,3 +24,17 @@ function divByFive(num) {
 }
 let arrNewNum = arrNum.filter(divByFive);
 console.log(arrNewNum);
+
+//REDUCE
+// The reduce() method executes a provided function for each value in an array (from left to right) and accumulates the results into a single value. It’s like folding or reducing an array into a single output.
+
+// You pass a callback function to reduce(). This function takes two parameters: An accumulator: This accumulates the results as the function iterates through the array. The current element of the array.
+
+// The reduce() method doesn’t execute the function for empty array elements. It doesn’t modify the original array.
+
+let arrValue = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const total = arrValue.reduce((accumulator, currentItem) => {
+  return accumulator + currentItem;
+});
+
+console.log(total);
