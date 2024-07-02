@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./accordion.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Accordion</title>
+</head>
+
+<body>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
+
+
+    <div class="h-screen bg-gradient-to-br from-pink-50 to-indigo-100 grid place-items-center">
+        <div class="w-6/12 mx-auto rounded border">
+            <div class="bg-white p-10 shadow-sm">
+                <h3 class="text-lg font-medium text-gray-800">Several Windows stacked on each other</h3>
+                <p class="text-sm font-light text-gray-600 my-3">
+                    The accordion is a graphical control element comprising a vertically stacked list of items such as
+                    labels or thumbnails
+                </p>
+
+                <div class="h-1 w-full mx-auto border-b my-5"></div>
+
+                <!-- What is term -->
+                <div class="transition hover:bg-indigo-50">
+                    <!-- header -->
+                    <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16">
+                        <i class="fas fa-plus"></i>
+                        <h3>What is Map?</h3>
+                    </div>
+                    <!-- Content -->
+                    <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
+                        <p class="leading-6 font-light pl-9 text-justify">
+                            It takes a callback function as an argument and returns a new array with the results of
+                            calling the function on every element of the original array. The callback function can take
+                            up to three parameters: the current element, the index of the current element, and the
+                            original array. The map method does not modify the original array, but creates a new one.
+                        </p>
+                        <button
+                            class="rounded-full bg-indigo-600 text-white font-medium font-lg px-6 py-2 my-5 ml-9">Learn
+                            more</button>
+                    </div>
+                </div>
+
+                <!-- When to use Accordion Components -->
+                <div class="transition hover:bg-indigo-50">
+                    <!-- header -->
+                    <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16">
+                        <i class="fas fa-plus"></i>
+                        <h3>What is filter?</h3>
+                    </div>
+                    <!-- Content -->
+                    <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
+                        <p class="leading-6 font-light pl-9 text-justify">
+                            The filter() method in JavaScript allows you to create a new array by selecting elements
+                            that meet specific criteria from an existing array. The filter() method doesn’t modify the
+                            original array; it creates a new one with the filtered elements.
+
+                        </p>
+                        <button
+                            class="rounded-full bg-indigo-600 text-white font-medium font-lg px-6 py-2 my-5 ml-9">Learn
+                            more</button>
+                    </div>
+                </div>
+
+                <!-- Accordion Wrapper -->
+                <div class="transition hover:bg-indigo-50">
+                    <!-- header -->
+                    <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16">
+                        <i class="fas fa-plus"></i>
+                        <h3>What is reduce?</h3>
+                    </div>
+                    <!-- Content -->
+                    <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
+                        <p class="leading-6 font-light pl-9 text-justify">
+                            The reduce() method executes a provided function for each value in an array (from left to
+                            right) and accumulates the results into a single value. It’s like folding or reducing an
+                            array into a single output. You pass a callback function to reduce(). This function takes
+                            two parameters: An accumulator: This accumulates the results as the function iterates
+                            through the array. The current element of the array. The reduce() method doesn’t execute the
+                            function for empty array elements. It doesn’t modify the original array.
+                        </p>
+                        <button
+                            class="rounded-full bg-indigo-600 text-white font-medium font-lg px-6 py-2 my-5 ml-9">Learn
+                            more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .accordion-content {
+            transition: max-height 0.3s ease-out, padding 0.3s ease;
+        }
+    </style>
+
+</body>
+
+</html>
