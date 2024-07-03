@@ -7,11 +7,21 @@
     <link rel="shortcut icon" href="./accordion.png" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Accordion</title>
+    <style>
+        .accordion-content {
+            overflow: hidden;
+            max-height: 0;
+            transition: 0.4s ease-out, 0.4s ease-out;
+        }
+
+        .accordion-content.active {
+            transition: 0.4s ease-out, 0.4s ease-out;
+        }
+    </style>
 </head>
 
 <body>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
-
 
     <div class="h-screen bg-gradient-to-br from-pink-50 to-indigo-100 grid place-items-center">
         <div class="w-6/12 mx-auto rounded border">
@@ -53,7 +63,7 @@
                         <h3>What is filter?</h3>
                     </div>
                     <!-- Content -->
-                    <div class="accordion-content px-5 pt-0 hidden">
+                    <div class="accordion-content px-5 pt-0">
                         <p class="leading-6 font-light pl-9 text-justify">
                             The filter() method in JavaScript allows you to create a new array by selecting elements
                             that meet specific criteria from an existing array. The filter() method doesn’t modify the
@@ -74,7 +84,7 @@
                         <h3>What is reduce?</h3>
                     </div>
                     <!-- Content -->
-                    <div class="accordion-content px-5 pt-0 hidden">
+                    <div class="accordion-content px-5 pt-0">
                         <p class="leading-6 font-light pl-9 text-justify">
                             The reduce() method executes a provided function for each value in an array (from left to
                             right) and accumulates the results into a single value. It’s like folding or reducing an
