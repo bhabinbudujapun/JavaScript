@@ -21,7 +21,7 @@
                     <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Camel Case</h2>
                     <nav class="list-none mb-10">
                         <li>
-                            <a class="text-gray-600 hover:text-gray-800">camelCase</a>
+                            <p id="camelCase" class="text-gray-600">camelCase</p>
                         </li>
                     </nav>
                 </div>
@@ -29,7 +29,7 @@
                     <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Pascal Case</h2>
                     <nav class="list-none mb-10">
                         <li>
-                            <a class="text-gray-600 hover:text-gray-800">PascalCase</a>
+                            <p id="pascalCase" class="text-gray-600">PascalCase</p>
                         </li>
                     </nav>
                 </div>
@@ -37,7 +37,7 @@
                     <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Snake Case</h2>
                     <nav class="list-none mb-10">
                         <li>
-                            <a class="text-gray-600 hover:text-gray-800">snake_case</a>
+                            <p id="snakeCase" class="text-gray-600">snake_case</p>
                         </li>
                     </nav>
                 </div>
@@ -46,7 +46,7 @@
                     </h2>
                     <nav class="list-none mb-10">
                         <li>
-                            <a class="text-gray-600 hover:text-gray-800">SNAKE_CASE</a>
+                            <p id="sSnakeCase" class="text-gray-600">SNAKE_CASE</p>
                         </li>
                     </nav>
                 </div>
@@ -54,7 +54,7 @@
                     <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Kebab Case</h2>
                     <nav class="list-none mb-10">
                         <li>
-                            <a class="text-gray-600 hover:text-gray-800">kebab-case</a>
+                            <p id="kebalCase" class="text-gray-600">kebab-case</p>
                         </li>
                     </nav>
                 </div>
@@ -63,26 +63,27 @@
                     </h2>
                     <nav class="list-none mb-10">
                         <li>
-                            <a class="text-gray-600 hover:text-gray-800">KEBAB-CASE</a>
+                            <p id="sKebabCase" class="text-gray-600">KEBAB-CASE</p>
                         </li>
                     </nav>
                 </div>
             </div>
         </div>
-        <div class="border-t border-gray-200">
+        <form class="border-t border-gray-200">
             <div class="flex justify-center items-center container px-5 py-8 mx-auto">
                 <div class="flex md:flex-nowrap flex-wrap justify-center items-end md:justify-start">
                     <div class="relative sm:w-64 w-40 sm:mr-4 mr-2">
-                        <label for="inputFeild" class="leading-7 text-sm text-gray-600">Coversion*words 35+include
+                        <label for="inputField" class="leading-7 text-sm text-gray-600">Coversion*words 35+include
                             whitespace*</label>
-                        <input type="text" id="inputFeild" name="inputFeild" maxlength="25"
-                            class="w-full bg-white rounded border border-gray-300 focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        <input type="text" id="inputField" name="inputField" maxlength="25"
+                            class="w-full bg-white rounded border border-gray-300 focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                            required>
                     </div>
-                    <button
+                    <button id="button"
                         class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Convert</button>
                 </div>
             </div>
-        </div>
+        </form>
     </div>
     <script src="./index.js"></script>
 </body>
