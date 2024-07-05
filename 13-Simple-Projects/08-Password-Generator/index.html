@@ -48,6 +48,26 @@
                             <input id="checkSymbols" type="checkbox">
                             <label for="checkSymbols">Include Symbols</label>
                         </div>
+                        <div class="flex space-x-3 items-center">
+                            <div class="p-6 w-full max-w-md">
+
+                                <label for="price-range" class="block text-gray-700">Password
+                                    Length</label>
+                                <input type="range" id="price-range" class="w-full accent-indigo-600" min="6" max="30"
+                                    value="15" oninput="updatePrice(this.value)">
+
+                                <div class="flex justify-between text-gray-500">
+                                    <span id="minPrice">6</span>
+                                    <span id="maxPrice">30</span>
+                                </div>
+                            </div>
+
+                            <script>
+                                function updatePrice(value) {
+                                    document.getElementById("minPrice").textContent = value;
+                                }
+                            </script>
+                        </div>
                         <form class="px-5 py-4 mx-auto">
                             <div class="flex md:flex-nowrap flex-wrap justify-center items-end md:justify-start">
                                 <div class="relative sm:w-64 w-40 sm:mr-4 mr-2">
